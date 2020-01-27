@@ -10,8 +10,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        
+        NavigationView {
+            NavigationLink(destination: DetailView()){
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                        Text("Cliquez ici")
+                            .font(.title)
+                    }
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(Color.white)
+                .cornerRadius(20)
+                    .shadow(color: Color.red, radius: 10, x: 3, y:3)
+                }
+            }
     }
+        
 }
 
 struct ContentView_Previews: PreviewProvider {
