@@ -26,25 +26,15 @@ struct ContentView: View {
     var body: some View {
         
         NavigationView{
-        
+            
             List(albums){ album in
                 
-                AlbumView(album: album)
-                /*HStack(spacing:20){
-                
-                Image(systemName: album.imageName).font(.title)
-                
-                VStack(alignment: .leading){
-
-                             Text(album.titleName).font(.title)
-                        Text(album.artistName).font(.headline).foregroundColor(Color.red)
-                    }
-                   
-                    }*/
-                
-                
-        }
-        .navigationBarTitle("PlayList")
+                NavigationLink(destination: AlbumDetailView(album: album)){
+                    
+                    AlbumView(album: album)
+                }
+            }
+            .navigationBarTitle("PlayList")
         }
     }
 }
@@ -59,20 +49,18 @@ struct AlbumView: View{
     
     var album:Album
     var body: some View {
-     
-   
-     
-             HStack(spacing:20){
-             
-             Image(systemName: album.imageName).font(.title)
-             
-             VStack(alignment: .leading){
-
-                          Text(album.titleName).font(.title)
-                     Text(album.artistName).font(.headline).foregroundColor(Color.red)
-                 }
-
-     }
-
-}
+        
+        HStack(spacing:20){
+            
+            Image(systemName: album.imageName).font(.title)
+            
+            VStack(alignment: .leading){
+                
+                Text(album.titleName).font(.title)
+                Text(album.artistName).font(.headline).foregroundColor(Color.red)
+            }
+            
+        }
+        
+    }
 }
