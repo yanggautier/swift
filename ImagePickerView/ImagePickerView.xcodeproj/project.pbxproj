@@ -13,6 +13,7 @@
 		27E9F6D523E1E0EB00557C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27E9F6D423E1E0EB00557C42 /* Assets.xcassets */; };
 		27E9F6D823E1E0EB00557C42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27E9F6D723E1E0EB00557C42 /* Preview Assets.xcassets */; };
 		27E9F6DB23E1E0EB00557C42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E9F6D923E1E0EB00557C42 /* LaunchScreen.storyboard */; };
+		27E9F6E323E1E53E00557C42 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F6E223E1E53E00557C42 /* ImagePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		27E9F6D723E1E0EB00557C42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27E9F6DA23E1E0EB00557C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27E9F6DC23E1E0EB00557C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27E9F6E223E1E53E00557C42 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				27E9F6CE23E1E0EA00557C42 /* AppDelegate.swift */,
 				27E9F6D023E1E0EA00557C42 /* SceneDelegate.swift */,
 				27E9F6D223E1E0EA00557C42 /* ContentView.swift */,
+				27E9F6E223E1E53E00557C42 /* ImagePickerView.swift */,
 				27E9F6D423E1E0EB00557C42 /* Assets.xcassets */,
 				27E9F6D923E1E0EB00557C42 /* LaunchScreen.storyboard */,
 				27E9F6DC23E1E0EB00557C42 /* Info.plist */,
@@ -148,6 +151,7 @@
 			files = (
 				27E9F6CF23E1E0EA00557C42 /* AppDelegate.swift in Sources */,
 				27E9F6D123E1E0EA00557C42 /* SceneDelegate.swift in Sources */,
+				27E9F6E323E1E53E00557C42 /* ImagePickerView.swift in Sources */,
 				27E9F6D323E1E0EA00557C42 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

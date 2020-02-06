@@ -9,8 +9,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
+    
+    @State var showImagePicker: Bool = false
+    @State var image:Image? = nil
+    
+    var body: some View{
+        ZStack{
+            VStack{
+                Button(action: {
+                    withAnimation{
+                        self.showImagePicker.toggle()
+                    }
+            }){
+                Text("Clique ici !")
+            }
+                image?.resizable().frame(width: 100, height: 100)
+        }
+        
     }
 }
 
